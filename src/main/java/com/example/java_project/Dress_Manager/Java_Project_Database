@@ -1,0 +1,22 @@
+create database java_project_db;
+
+use java_project_db;
+
+create table customer_profile_page( email varchar(60)primary key , name varchar(20),mobileno varchar(10),gender varchar(10),dob date,address varchar(50),state varchar(30),city varchar(30),picpath varchar(150));
+
+select *from customer_profile_page;
+
+
+create table workerspage(workername varchar(40) primary key,mobileno varchar(10),address varchar(50),selspz varchar(150));
+
+select *from workerspage;
+
+
+create table measurementpage(order_id int auto_increment primary key,dress varchar(20),availableworkers varchar(20),mobileno varchar(10),dod date,qty int,priceperqty int,picpath varchar(100),bill int,measurements varchar(500),orderdate date default (current_date),selstatus varchar(10));
+Alter table measurementpage modify column selstatus int;
+select *from measurementpage;
+
+create table owner(ownerId varchar(30),ownerPwd varchar(10));
+Insert into owner(ownerId,ownerPwd)values('admin@gmail.com','admin123');
+select * from owner;
+
