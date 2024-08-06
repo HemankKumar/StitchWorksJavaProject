@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="660.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_project.OrderDileveryPanel.OrderDilevery">
+   <children>
+      <TextField fx:id="mobilenoids" layoutX="170.0" layoutY="146.0" prefHeight="26.0" prefWidth="190.0" promptText="Enter Mobile.No" />
+      <Button layoutX="373.0" layoutY="146.0" mnemonicParsing="false" onAction="#Find_all_orders" prefHeight="26.0" prefWidth="91.0" text="Find Orders" />
+      <ListView fx:id="Orderids" layoutX="14.0" layoutY="272.0" prefHeight="200.0" prefWidth="113.0" />
+      <ListView fx:id="Billids" layoutX="487.0" layoutY="272.0" prefHeight="200.0" prefWidth="102.0" />
+      <ListView fx:id="dressids" layoutX="144.0" layoutY="272.0" prefHeight="200.0" prefWidth="121.0" />
+      <Button layoutX="460.0" layoutY="616.0" mnemonicParsing="false" onAction="#do_Deliver_dresses" prefHeight="26.0" prefWidth="122.0" text="Deliver" />
+      <Label alignment="CENTER" layoutX="19.0" layoutY="253.0" prefHeight="18.0" prefWidth="91.0" text="Order Id" />
+      <Label alignment="CENTER" layoutX="521.0" layoutY="253.0" prefHeight="18.0" prefWidth="34.0" text="Bill" />
+      <Label alignment="CENTER" layoutX="165.0" layoutY="253.0" prefHeight="18.0" prefWidth="78.0" text="Dresses" />
+      <Label alignment="CENTER" layoutX="19.0" layoutY="620.0" prefHeight="18.0" prefWidth="91.0" text="Total Bill : " />
+      <TextField fx:id="showbillids" layoutX="123.0" layoutY="616.0" prefHeight="26.0" prefWidth="130.0" />
+      <ListView fx:id="qtyids" layoutX="283.0" layoutY="272.0" prefHeight="200.0" prefWidth="102.0" />
+      <Label alignment="CENTER" layoutX="295.0" layoutY="253.0" prefHeight="18.0" prefWidth="78.0" text="Quantity" />
+      <ListView fx:id="statusids" layoutX="399.0" layoutY="272.0" prefHeight="200.0" prefWidth="78.0" />
+      <Label alignment="CENTER" layoutX="415.0" layoutY="253.0" prefHeight="18.0" prefWidth="45.0" text="Status" />
+      <Label alignment="CENTER" layoutX="178.0" layoutY="45.0" prefHeight="18.0" prefWidth="273.0" text="All Orders" underline="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

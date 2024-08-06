@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="660.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_project.workerrecruitmentpage.worker">
+   <children>
+      <ImageView fitHeight="124.0" fitWidth="162.0" layoutX="228.0" layoutY="7.0" pickOnBounds="true">
+         <image>
+            <Image url="@workerrecruitment.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="37.0" layoutY="137.0" prefHeight="54.0" prefWidth="543.0" text="Workers Registration Form" underline="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="workername" layoutX="70.0" layoutY="216.0" prefHeight="26.0" prefWidth="188.0" promptText="Worker Name" />
+      <TextField fx:id="mobileno" layoutX="296.0" layoutY="216.0" prefHeight="26.0" prefWidth="188.0" promptText="Mobiler.no" />
+      <TextField fx:id="address" layoutX="70.0" layoutY="288.0" prefHeight="26.0" prefWidth="414.0" promptText="Address" />
+      <TextField fx:id="selspz" layoutX="277.0" layoutY="356.0" prefHeight="26.0" prefWidth="218.0" promptText="Selected Specialization" />
+      <Button layoutX="201.0" layoutY="581.0" mnemonicParsing="false" onAction="#dosave" prefHeight="26.0" prefWidth="95.0" text="Save" />
+      <Button layoutX="349.0" layoutY="581.0" mnemonicParsing="false" onAction="#donew" prefHeight="26.0" prefWidth="95.0" text="New" />
+      <ListView fx:id="lstspz" layoutX="69.0" layoutY="356.0" onMouseClicked="#addspzintextbox" prefHeight="147.0" prefWidth="162.0" />
+      <Label layoutX="99.0" layoutY="503.0" text="Select Specilization" />
+   </children>
+</AnchorPane>

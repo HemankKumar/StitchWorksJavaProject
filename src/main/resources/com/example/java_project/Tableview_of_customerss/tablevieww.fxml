@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="660.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_project.Tableview_of_workers.tableview">
+   <children>
+      <Button layoutX="348.0" layoutY="145.0" mnemonicParsing="false" onAction="#do_fetch_all_records" prefHeight="26.0" prefWidth="199.0" text="Fetch All Records" />
+      <TableView fx:id="tablevieww" layoutX="37.0" layoutY="245.0" prefHeight="318.0" prefWidth="532.0" />
+      <Button layoutX="203.0" layoutY="583.0" mnemonicParsing="false" onAction="#do_export_to_Excel" prefHeight="26.0" prefWidth="199.0" text="Export to Excel" />
+      <ComboBox fx:id="combo_spz" editable="true" layoutX="44.0" layoutY="145.0" onAction="#do_change_tableview" prefHeight="26.0" prefWidth="256.0" promptText="Select Specialization" />
+      <Label layoutX="187.0" layoutY="36.0" prefHeight="18.0" prefWidth="256.0" text="All Customers" underline="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
