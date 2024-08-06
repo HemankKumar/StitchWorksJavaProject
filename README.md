@@ -20,5 +20,3 @@ Email Notifications: Automated email notifications for order confirmation and de
 
 Technology Stack: Language: Java GUI Framework: JavaFX Database: MySQL (for storing customer, worker, and order details) Export: Apache POI (for exporting data to Excel sheets)
 
-
-Getting Started: Clone the repository StitchWorks_ProgramFiles here is the link given for the repo:
